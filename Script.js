@@ -1,4 +1,6 @@
-
+function unlike() {
+  classList.toggle("fa-thumbs-down");
+}
 async function sendMessage() {
   const input = document.getElementById('message');
   const text = input.value.trim();
