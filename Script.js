@@ -1,5 +1,5 @@
-function unlike() {
-  classList.toggle("fa-thumbs-down");
+function unlike(x) {
+  x.classList.toggle("fa-thumbs-down");
 }
 async function sendMessage() {
   const input = document.getElementById('message');

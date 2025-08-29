@@ -26,10 +26,12 @@
                             <i class="bi bi-discord text-dark fs-3" id="discordIcon"></i>
                         </span>
                     </div>
-                    <span id="personalityDisplay" class="badge bg-warning text-dark">Friendly</span>
-                </div>
+                    <div class="d-flex flex-row">
+                    <span id="personalityDisplay" class="badge bg-warning text-dark text-center d-flex me-2">Friendly</span>
+                    <a onclick="Theme()"><span class="text-white ms-0"><i class="bi bi-lightbulb-fill fs-4" id="light"></i></span></a>
+                </div></div>
             
-            <div id="chatWindow" class="card-body overflow-auto" style="height: 400px;">
+            <div id="chatWindow" class="card-body overflow-auto text-dark" style="height: 400px;">
                 <div id="typingIndicator" class="px-3 py-1 text-muted fst-italic d-none">
                     AI is typing<span class="dots">...</span>
                 </div>
@@ -37,9 +39,9 @@
                 </div>
                 <div class="card-footer bg-white">
                     <div class="input-group">
-                        <i onclick="unlike()" class="fa fa-thumbs-up"></i>
+                        <i onclick="unlike(this)" class="fa fa-thumbs-up fs-2 me-2" style="cursor: pointer;"></i>
                         <input type="text" id="message" class="form-control rounded-pill" placeholder="Type a message...">
-                        <button type="button" class="btn btn-primary rounded-pill" id="sendBtn">Send</button>
+                        <button type="button" class="btn btn-primary rounded-pill ms-2 me-0" id="sendBtn">Send</button>
                     </div>
                 </div>
             </div>
